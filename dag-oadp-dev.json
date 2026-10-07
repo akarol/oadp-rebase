@@ -7,13 +7,33 @@
       "skip": false,
       "upstream": "project-velero/kopia @ $UPSTREAM_KOPIA_TAG_BRANCH_FOR_VELERO",
       "checks": {
+        "rebasebot": {
+          "status": "ok",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.25.8"
+        },
         "ci_config": {
+          "status": "na",
+          "summary": ""
+        },
+        "dep_sync": {
+          "status": "ok",
+          "summary": ""
+        },
+        "productized": {
           "status": "na",
           "summary": ""
         },
         "upstream_sync": {
           "status": "warn",
           "summary": "err"
+        },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
         },
         "konflux": {
           "status": "na",
@@ -27,32 +47,12 @@
           "status": "na",
           "summary": ""
         },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "rebasebot": {
-          "status": "ok",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.25.8"
-        },
-        "dep_sync": {
-          "status": "ok",
-          "summary": ""
-        },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "productized": {
-          "status": "na",
-          "summary": ""
-        },
         "open_pr": {
           "status": "na",
+          "summary": ""
+        },
+        "config": {
+          "status": "ok",
           "summary": ""
         }
       },
@@ -71,31 +71,19 @@
       "skip": true,
       "upstream": "",
       "checks": {
+        "open_pr": {
+          "status": "skip",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "skip",
+          "summary": ""
+        },
         "upstream_sync": {
           "status": "skip",
           "summary": ""
         },
         "dep_sync": {
-          "status": "skip",
-          "summary": ""
-        },
-        "konflux": {
-          "status": "skip",
-          "summary": ""
-        },
-        "art_config": {
-          "status": "skip",
-          "summary": ""
-        },
-        "open_pr": {
-          "status": "skip",
-          "summary": ""
-        },
-        "config": {
-          "status": "skip",
-          "summary": ""
-        },
-        "rebasebot": {
           "status": "skip",
           "summary": ""
         },
@@ -111,11 +99,23 @@
           "status": "skip",
           "summary": ""
         },
-        "go_version": {
+        "config": {
+          "status": "skip",
+          "summary": ""
+        },
+        "rebasebot": {
           "status": "skip",
           "summary": ""
         },
         "ci_config": {
+          "status": "skip",
+          "summary": ""
+        },
+        "konflux": {
+          "status": "skip",
+          "summary": ""
+        },
+        "art_config": {
           "status": "skip",
           "summary": ""
         }
@@ -129,21 +129,21 @@
       "skip": false,
       "upstream": "filebrowser/filebrowser @ master",
       "checks": {
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
+        },
         "ci_config": {
           "status": "ok",
           "summary": ""
         },
-        "upstream_sync": {
-          "status": "fail",
-          "summary": "diverged"
-        },
         "dep_sync": {
           "status": "ok",
           "summary": ""
-        },
-        "gomod_drift": {
-          "status": "fail",
-          "summary": "4"
         },
         "konflux": {
           "status": "na",
@@ -151,7 +151,7 @@
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "32m ago"
+          "summary": "23m ago"
         },
         "rebasebot": {
           "status": "ok",
@@ -161,6 +161,14 @@
           "status": "ok",
           "summary": "1.25.0"
         },
+        "upstream_sync": {
+          "status": "fail",
+          "summary": "diverged"
+        },
+        "gomod_drift": {
+          "status": "fail",
+          "summary": "4"
+        },
         "art_config": {
           "status": "na",
           "summary": ""
@@ -168,36 +176,28 @@
         "productized": {
           "status": "na",
           "summary": ""
-        },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
-        "config": {
-          "status": "ok",
-          "summary": ""
         }
       },
       "gomod_drifts": [
-        {
-          "module": "golang.org/x/crypto",
-          "downstream": "v0.53.0",
-          "upstream": "v0.54.0"
-        },
-        {
-          "module": "golang.org/x/text",
-          "downstream": "v0.38.0",
-          "upstream": "v0.40.0"
-        },
         {
           "module": "github.com/asticode/go-astisub",
           "downstream": "v0.41.0",
           "upstream": "v0.42.0"
         },
         {
+          "module": "golang.org/x/crypto",
+          "downstream": "v0.53.0",
+          "upstream": "v0.54.0"
+        },
+        {
           "module": "golang.org/x/image",
           "downstream": "v0.43.0",
           "upstream": "v0.44.0"
+        },
+        {
+          "module": "golang.org/x/text",
+          "downstream": "v0.38.0",
+          "upstream": "v0.40.0"
         }
       ],
       "issues": [
@@ -219,16 +219,16 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "open_pr": {
-          "status": "ok",
-          "summary": "#186"
-        },
-        "config": {
-          "status": "ok",
+        "productized": {
+          "status": "na",
           "summary": ""
         },
-        "rebasebot": {
+        "go_version": {
           "status": "ok",
+          "summary": "1.25.0"
+        },
+        "ci_config": {
+          "status": "na",
           "summary": ""
         },
         "dep_sync": {
@@ -243,18 +243,6 @@
           "status": "na",
           "summary": ""
         },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.25.0"
-        },
-        "ci_config": {
-          "status": "na",
-          "summary": ""
-        },
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
-        },
         "upstream_image": {
           "status": "na",
           "summary": ""
@@ -263,7 +251,19 @@
           "status": "na",
           "summary": ""
         },
-        "productized": {
+        "open_pr": {
+          "status": "ok",
+          "summary": "#186"
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "rebasebot": {
+          "status": "ok",
+          "summary": ""
+        },
+        "upstream_sync": {
           "status": "na",
           "summary": ""
         }
@@ -277,30 +277,6 @@
       "skip": false,
       "upstream": "migtools/kopia @ oadp-dev",
       "checks": {
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "gomod_drift": {
-          "status": "ok",
-          "summary": ""
-        },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
-        },
-        "art_config": {
-          "status": "na",
-          "summary": ""
-        },
-        "productized": {
-          "status": "na",
-          "summary": ""
-        },
         "rebasebot": {
           "status": "ok",
           "summary": ""
@@ -309,11 +285,27 @@
           "status": "ok",
           "summary": "1.25.8"
         },
-        "ci_config": {
+        "upstream_sync": {
           "status": "ok",
           "summary": ""
         },
-        "upstream_sync": {
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "23m ago"
+        },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "ci_config": {
           "status": "ok",
           "summary": ""
         },
@@ -321,9 +313,17 @@
           "status": "ok",
           "summary": ""
         },
-        "upstream_image": {
+        "gomod_drift": {
           "status": "ok",
-          "summary": "32m ago"
+          "summary": ""
+        },
+        "art_config": {
+          "status": "na",
+          "summary": ""
+        },
+        "productized": {
+          "status": "na",
+          "summary": ""
         }
       },
       "cves": null
@@ -335,6 +335,22 @@
       "skip": false,
       "upstream": "velero-io/velero @ main",
       "checks": {
+        "productized": {
+          "status": "na",
+          "summary": ""
+        },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
+        },
         "dep_sync": {
           "status": "fail",
           "summary": "1/2"
@@ -345,43 +361,27 @@
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "32m ago"
-        },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
-        "ci_config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
+          "summary": "23m ago"
         },
         "art_config": {
           "status": "na",
-          "summary": ""
-        },
-        "productized": {
-          "status": "na",
-          "summary": ""
-        },
-        "config": {
-          "status": "ok",
           "summary": ""
         },
         "rebasebot": {
           "status": "ok",
           "summary": ""
         },
+        "ci_config": {
+          "status": "ok",
+          "summary": ""
+        },
         "upstream_sync": {
           "status": "fail",
           "summary": "diverged"
+        },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
         }
       },
       "dep_syncs": [
@@ -422,24 +422,19 @@
       ],
       "gomod_drifts": [
         {
-          "module": "k8s.io/client-go",
-          "downstream": "v0.36.0",
-          "upstream": "v0.36.1"
-        },
-        {
-          "module": "golang.org/x/mod",
-          "downstream": "v0.36.0",
-          "upstream": "v0.40.0"
-        },
-        {
           "module": "k8s.io/apimachinery",
           "downstream": "v0.36.0",
           "upstream": "v0.36.1"
         },
         {
-          "module": "github.com/kubernetes-csi/external-snapshotter/client/v8",
-          "downstream": "v8.4.0",
-          "upstream": "v8.6.0"
+          "module": "golang.org/x/text",
+          "downstream": "v0.37.0",
+          "upstream": "v0.41.0"
+        },
+        {
+          "module": "k8s.io/api",
+          "downstream": "v0.36.0",
+          "upstream": "v0.36.1"
         },
         {
           "module": "google.golang.org/grpc",
@@ -452,19 +447,24 @@
           "upstream": "v1.36.12"
         },
         {
+          "module": "k8s.io/client-go",
+          "downstream": "v0.36.0",
+          "upstream": "v0.36.1"
+        },
+        {
+          "module": "golang.org/x/mod",
+          "downstream": "v0.36.0",
+          "upstream": "v0.40.0"
+        },
+        {
+          "module": "github.com/kubernetes-csi/external-snapshotter/client/v8",
+          "downstream": "v8.4.0",
+          "upstream": "v8.6.0"
+        },
+        {
           "module": "golang.org/x/sys",
           "downstream": "v0.46.0",
           "upstream": "v0.47.0"
-        },
-        {
-          "module": "golang.org/x/text",
-          "downstream": "v0.37.0",
-          "upstream": "v0.41.0"
-        },
-        {
-          "module": "k8s.io/api",
-          "downstream": "v0.36.0",
-          "upstream": "v0.36.1"
         }
       ],
       "issues": [
@@ -490,6 +490,10 @@
       "skip": false,
       "upstream": "kubevirt/kubevirt-velero-plugin @ main",
       "checks": {
+        "art_config": {
+          "status": "na",
+          "summary": ""
+        },
         "rebasebot": {
           "status": "ok",
           "summary": ""
@@ -497,6 +501,22 @@
         "go_version": {
           "status": "ok",
           "summary": "1.25.0"
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "23m ago"
+        },
+        "productized": {
+          "status": "na",
+          "summary": ""
+        },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
         },
         "ci_config": {
           "status": "ok",
@@ -517,26 +537,6 @@
         "konflux": {
           "status": "na",
           "summary": ""
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "32m ago"
-        },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "art_config": {
-          "status": "na",
-          "summary": ""
-        },
-        "productized": {
-          "status": "na",
-          "summary": ""
         }
       },
       "dep_syncs": [
@@ -545,17 +545,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c1eb1d016cd2",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "b6749d882ca0a1494078ffee5a36685e53b47869",
-              "message": "Merge pull request #10059 from shubham-pampattiwar/docs/migrate-links-to-velero-io"
-            },
-            {
-              "sha": "e5654fa7eda520408896a2f1b09c806ab8c07012",
-              "message": "Fix flaky TestKopiaObjectWriterEx_ConcurrentAsyncErrors (#10030)"
-            },
             {
               "sha": "5ecf38b5d7fdcd081aa7b64f4777eab74e350de1",
               "message": "Derive dev-tool CLI versions from go.mod (ginkgo, protoc-gen-go, goimports) (#10024)"
@@ -1547,6 +1539,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         }
@@ -1570,6 +1570,38 @@
       "skip": false,
       "upstream": "",
       "checks": {
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/1"
+        },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
+        "upstream_image": {
+          "status": "na",
+          "summary": ""
+        },
+        "ci_config": {
+          "status": "na",
+          "summary": ""
+        },
+        "upstream_sync": {
+          "status": "na",
+          "summary": ""
+        },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
+        },
+        "art_config": {
+          "status": "na",
+          "summary": ""
+        },
+        "productized": {
+          "status": "na",
+          "summary": ""
+        },
         "open_pr": {
           "status": "na",
           "summary": ""
@@ -1582,41 +1614,9 @@
           "status": "ok",
           "summary": ""
         },
-        "ci_config": {
-          "status": "na",
-          "summary": ""
-        },
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
-        },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "upstream_image": {
-          "status": "na",
-          "summary": ""
-        },
-        "art_config": {
-          "status": "na",
-          "summary": ""
-        },
         "go_version": {
           "status": "ok",
           "summary": "1.26.0"
-        },
-        "dep_sync": {
-          "status": "fail",
-          "summary": "0/1"
-        },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
-        },
-        "productized": {
-          "status": "na",
-          "summary": ""
         }
       },
       "dep_syncs": [
@@ -1625,17 +1625,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "2091b09b93bb",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "e2249c26d5edda46ae1bfae77e4895126ab3a8c0",
-              "message": "Update docs and governance links from vmware-tanzu to velero-io"
-            },
-            {
-              "sha": "d69f6abe5cc31fbc5c0543db9ebce9f3e26a6c4d",
-              "message": "Add param to StartRestore to facilitates future expansion (#10057)"
-            },
             {
               "sha": "c676fdd03e5c2e3f7a38c1fc3e6169f3dd242720",
               "message": "Merge pull request #10000 from shubham-pampattiwar/fix/cleanup-stale-backup-metrics"
@@ -2627,6 +2619,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         }
@@ -2646,35 +2646,11 @@
       "skip": true,
       "upstream": "",
       "checks": {
-        "ci_config": {
-          "status": "skip",
-          "summary": ""
-        },
         "upstream_image": {
           "status": "skip",
           "summary": ""
         },
         "productized": {
-          "status": "skip",
-          "summary": ""
-        },
-        "upstream_sync": {
-          "status": "skip",
-          "summary": ""
-        },
-        "dep_sync": {
-          "status": "skip",
-          "summary": ""
-        },
-        "gomod_drift": {
-          "status": "skip",
-          "summary": ""
-        },
-        "konflux": {
-          "status": "skip",
-          "summary": ""
-        },
-        "art_config": {
           "status": "skip",
           "summary": ""
         },
@@ -2690,7 +2666,31 @@
           "status": "skip",
           "summary": ""
         },
+        "ci_config": {
+          "status": "skip",
+          "summary": ""
+        },
+        "upstream_sync": {
+          "status": "skip",
+          "summary": ""
+        },
+        "dep_sync": {
+          "status": "skip",
+          "summary": ""
+        },
+        "konflux": {
+          "status": "skip",
+          "summary": ""
+        },
+        "art_config": {
+          "status": "skip",
+          "summary": ""
+        },
         "go_version": {
+          "status": "skip",
+          "summary": ""
+        },
+        "gomod_drift": {
           "status": "skip",
           "summary": ""
         }
@@ -2704,19 +2704,7 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
-        },
-        "dep_sync": {
-          "status": "fail",
-          "summary": "0/2"
-        },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "productized": {
+        "open_pr": {
           "status": "na",
           "summary": ""
         },
@@ -2728,9 +2716,29 @@
           "status": "ok",
           "summary": ""
         },
+        "ci_config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "upstream_sync": {
+          "status": "na",
+          "summary": ""
+        },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
+        "art_config": {
+          "status": "na",
+          "summary": ""
+        },
         "go_version": {
           "status": "ok",
           "summary": "1.26.0"
+        },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/2"
         },
         "konflux": {
           "status": "na",
@@ -2738,18 +2746,10 @@
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "32m ago"
+          "summary": "23m ago"
         },
-        "art_config": {
+        "productized": {
           "status": "na",
-          "summary": ""
-        },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
-        "ci_config": {
-          "status": "ok",
           "summary": ""
         }
       },
@@ -2759,7 +2759,7 @@
           "org": "openshift",
           "repo": "velero",
           "have": "9835db7cd88f",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
             {
@@ -2785,6 +2785,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         },
@@ -3606,17 +3614,13 @@
       "skip": false,
       "upstream": "velero-io/velero-plugin-for-aws @ main",
       "checks": {
-        "open_pr": {
-          "status": "na",
-          "summary": ""
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
         },
-        "ci_config": {
+        "gomod_drift": {
           "status": "ok",
           "summary": ""
-        },
-        "dep_sync": {
-          "status": "fail",
-          "summary": "0/1"
         },
         "konflux": {
           "status": "ok",
@@ -3624,34 +3628,38 @@
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "32m ago"
+          "summary": "23m ago"
         },
         "art_config": {
           "status": "na",
           "summary": ""
         },
-        "config": {
-          "status": "ok",
+        "open_pr": {
+          "status": "na",
           "summary": ""
         },
         "rebasebot": {
           "status": "ok",
           "summary": ""
         },
-        "go_version": {
+        "ci_config": {
           "status": "ok",
-          "summary": "1.26.0"
+          "summary": ""
         },
         "upstream_sync": {
           "status": "fail",
           "summary": "diverged"
         },
-        "gomod_drift": {
-          "status": "ok",
-          "summary": ""
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/1"
         },
         "productized": {
           "status": "na",
+          "summary": ""
+        },
+        "config": {
+          "status": "ok",
           "summary": ""
         }
       },
@@ -3661,17 +3669,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "2091b09b93bb",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "e2249c26d5edda46ae1bfae77e4895126ab3a8c0",
-              "message": "Update docs and governance links from vmware-tanzu to velero-io"
-            },
-            {
-              "sha": "d69f6abe5cc31fbc5c0543db9ebce9f3e26a6c4d",
-              "message": "Add param to StartRestore to facilitates future expansion (#10057)"
-            },
             {
               "sha": "c676fdd03e5c2e3f7a38c1fc3e6169f3dd242720",
               "message": "Merge pull request #10000 from shubham-pampattiwar/fix/cleanup-stale-backup-metrics"
@@ -4663,6 +4663,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         }
@@ -4686,6 +4694,14 @@
       "skip": false,
       "upstream": "",
       "checks": {
+        "upstream_image": {
+          "status": "ok",
+          "summary": "23m ago"
+        },
+        "art_config": {
+          "status": "na",
+          "summary": ""
+        },
         "rebasebot": {
           "status": "ok",
           "summary": ""
@@ -4693,6 +4709,22 @@
         "go_version": {
           "status": "ok",
           "summary": "1.25.0"
+        },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
+        "productized": {
+          "status": "na",
+          "summary": ""
+        },
+        "open_pr": {
+          "status": "ok",
+          "summary": "#68"
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
         },
         "ci_config": {
           "status": "ok",
@@ -4709,30 +4741,6 @@
         "konflux": {
           "status": "ok",
           "summary": "rhel_9_golang_1.25"
-        },
-        "productized": {
-          "status": "na",
-          "summary": ""
-        },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "32m ago"
-        },
-        "art_config": {
-          "status": "na",
-          "summary": ""
-        },
-        "open_pr": {
-          "status": "ok",
-          "summary": "#68"
         }
       },
       "dep_syncs": [
@@ -4741,17 +4749,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "5cf28471570d",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "b6749d882ca0a1494078ffee5a36685e53b47869",
-              "message": "Merge pull request #10059 from shubham-pampattiwar/docs/migrate-links-to-velero-io"
-            },
-            {
-              "sha": "e5654fa7eda520408896a2f1b09c806ab8c07012",
-              "message": "Fix flaky TestKopiaObjectWriterEx_ConcurrentAsyncErrors (#10030)"
-            },
             {
               "sha": "5ecf38b5d7fdcd081aa7b64f4777eab74e350de1",
               "message": "Derive dev-tool CLI versions from go.mod (ginkgo, protoc-gen-go, goimports) (#10024)"
@@ -5743,6 +5743,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         }
@@ -5762,43 +5770,27 @@
       "skip": false,
       "upstream": "velero-io/velero-plugin-for-microsoft-azure @ main",
       "checks": {
-        "productized": {
-          "status": "na",
-          "summary": ""
-        },
-        "rebasebot": {
-          "status": "ok",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
         "ci_config": {
           "status": "ok",
           "summary": ""
         },
-        "dep_sync": {
+        "upstream_sync": {
           "status": "fail",
-          "summary": "0/1"
+          "summary": "diverged"
         },
         "gomod_drift": {
           "status": "ok",
           "summary": ""
         },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
-        },
         "upstream_image": {
           "status": "ok",
-          "summary": "32m ago"
+          "summary": "23m ago"
         },
         "art_config": {
           "status": "na",
           "summary": ""
         },
-        "open_pr": {
+        "productized": {
           "status": "na",
           "summary": ""
         },
@@ -5806,9 +5798,25 @@
           "status": "ok",
           "summary": ""
         },
-        "upstream_sync": {
+        "rebasebot": {
+          "status": "ok",
+          "summary": ""
+        },
+        "dep_sync": {
           "status": "fail",
-          "summary": "diverged"
+          "summary": "0/1"
+        },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
+        },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
         }
       },
       "dep_syncs": [
@@ -5817,17 +5825,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "37c17dda0586",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "564d213e6b7541925978107c589d97e845262a85",
-              "message": "Merge pull request #10035 from HajimohammadiNet/fix-install-plugin-spacing"
-            },
-            {
-              "sha": "b6749d882ca0a1494078ffee5a36685e53b47869",
-              "message": "Merge pull request #10059 from shubham-pampattiwar/docs/migrate-links-to-velero-io"
-            },
             {
               "sha": "e5654fa7eda520408896a2f1b09c806ab8c07012",
               "message": "Fix flaky TestKopiaObjectWriterEx_ConcurrentAsyncErrors (#10030)"
@@ -6819,6 +6819,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         }
@@ -6842,37 +6850,21 @@
       "skip": false,
       "upstream": "velero-io/velero-plugin-for-gcp @ main",
       "checks": {
-        "gomod_drift": {
-          "status": "ok",
-          "summary": ""
-        },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
-        },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "rebasebot": {
-          "status": "ok",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
         "ci_config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "upstream_sync": {
+          "status": "fail",
+          "summary": "diverged"
+        },
+        "gomod_drift": {
           "status": "ok",
           "summary": ""
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "32m ago"
-        },
-        "art_config": {
-          "status": "na",
-          "summary": ""
+          "summary": "23m ago"
         },
         "productized": {
           "status": "na",
@@ -6882,13 +6874,29 @@
           "status": "ok",
           "summary": "#163"
         },
-        "upstream_sync": {
-          "status": "fail",
-          "summary": "diverged"
+        "config": {
+          "status": "ok",
+          "summary": ""
         },
         "dep_sync": {
           "status": "fail",
           "summary": "0/1"
+        },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
+        },
+        "art_config": {
+          "status": "na",
+          "summary": ""
+        },
+        "rebasebot": {
+          "status": "ok",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
         }
       },
       "dep_syncs": [
@@ -6897,17 +6905,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "37c17dda0586",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "564d213e6b7541925978107c589d97e845262a85",
-              "message": "Merge pull request #10035 from HajimohammadiNet/fix-install-plugin-spacing"
-            },
-            {
-              "sha": "b6749d882ca0a1494078ffee5a36685e53b47869",
-              "message": "Merge pull request #10059 from shubham-pampattiwar/docs/migrate-links-to-velero-io"
-            },
             {
               "sha": "e5654fa7eda520408896a2f1b09c806ab8c07012",
               "message": "Fix flaky TestKopiaObjectWriterEx_ConcurrentAsyncErrors (#10030)"
@@ -7899,6 +7899,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         }
@@ -7926,34 +7934,6 @@
           "status": "ok",
           "summary": ""
         },
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
-        },
-        "dep_sync": {
-          "status": "fail",
-          "summary": "0/2"
-        },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "32m ago"
-        },
-        "productized": {
-          "status": "na",
-          "summary": ""
-        },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
         "rebasebot": {
           "status": "ok",
           "summary": ""
@@ -7966,7 +7946,35 @@
           "status": "fail",
           "summary": ""
         },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/2"
+        },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "upstream_sync": {
+          "status": "na",
+          "summary": ""
+        },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "23m ago"
+        },
         "art_config": {
+          "status": "na",
+          "summary": ""
+        },
+        "productized": {
           "status": "na",
           "summary": ""
         }
@@ -8779,17 +8787,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "2091b09b93bb",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "e2249c26d5edda46ae1bfae77e4895126ab3a8c0",
-              "message": "Update docs and governance links from vmware-tanzu to velero-io"
-            },
-            {
-              "sha": "d69f6abe5cc31fbc5c0543db9ebce9f3e26a6c4d",
-              "message": "Add param to StartRestore to facilitates future expansion (#10057)"
-            },
             {
               "sha": "c676fdd03e5c2e3f7a38c1fc3e6169f3dd242720",
               "message": "Merge pull request #10000 from shubham-pampattiwar/fix/cleanup-stale-backup-metrics"
@@ -9781,6 +9781,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         }
@@ -9804,39 +9812,7 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
-        },
-        "dep_sync": {
-          "status": "fail",
-          "summary": "0/1"
-        },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "32m ago"
-        },
-        "art_config": {
-          "status": "na",
-          "summary": ""
-        },
         "productized": {
-          "status": "na",
-          "summary": ""
-        },
-        "open_pr": {
           "status": "na",
           "summary": ""
         },
@@ -9851,6 +9827,38 @@
         "ci_config": {
           "status": "ok",
           "summary": ""
+        },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/1"
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "23m ago"
+        },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
+        },
+        "upstream_sync": {
+          "status": "na",
+          "summary": ""
+        },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
+        },
+        "art_config": {
+          "status": "na",
+          "summary": ""
         }
       },
       "dep_syncs": [
@@ -9859,17 +9867,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "2091b09b93bb",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "e2249c26d5edda46ae1bfae77e4895126ab3a8c0",
-              "message": "Update docs and governance links from vmware-tanzu to velero-io"
-            },
-            {
-              "sha": "d69f6abe5cc31fbc5c0543db9ebce9f3e26a6c4d",
-              "message": "Add param to StartRestore to facilitates future expansion (#10057)"
-            },
             {
               "sha": "c676fdd03e5c2e3f7a38c1fc3e6169f3dd242720",
               "message": "Merge pull request #10000 from shubham-pampattiwar/fix/cleanup-stale-backup-metrics"
@@ -10861,6 +10861,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         }
@@ -10888,17 +10896,25 @@
           "status": "fail",
           "summary": "0/1"
         },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.26"
-        },
         "gomod_drift": {
           "status": "na",
           "summary": ""
         },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.26"
+        },
         "upstream_image": {
           "status": "ok",
-          "summary": "32m ago"
+          "summary": "23m ago"
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
+        },
+        "ci_config": {
+          "status": "ok",
+          "summary": ""
         },
         "art_config": {
           "status": "na",
@@ -10919,14 +10935,6 @@
         "rebasebot": {
           "status": "ok",
           "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
-        "ci_config": {
-          "status": "ok",
-          "summary": ""
         }
       },
       "dep_syncs": [
@@ -10935,17 +10943,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "2091b09b93bb",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "e2249c26d5edda46ae1bfae77e4895126ab3a8c0",
-              "message": "Update docs and governance links from vmware-tanzu to velero-io"
-            },
-            {
-              "sha": "d69f6abe5cc31fbc5c0543db9ebce9f3e26a6c4d",
-              "message": "Add param to StartRestore to facilitates future expansion (#10057)"
-            },
             {
               "sha": "c676fdd03e5c2e3f7a38c1fc3e6169f3dd242720",
               "message": "Merge pull request #10000 from shubham-pampattiwar/fix/cleanup-stale-backup-metrics"
@@ -11937,6 +11937,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         }
@@ -11956,12 +11964,32 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "open_pr": {
+        "upstream_image": {
+          "status": "ok",
+          "summary": "23m ago"
+        },
+        "art_config": {
           "status": "na",
           "summary": ""
         },
         "config": {
           "status": "ok",
+          "summary": ""
+        },
+        "ci_config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
+        "productized": {
+          "status": "na",
+          "summary": ""
+        },
+        "open_pr": {
+          "status": "na",
           "summary": ""
         },
         "rebasebot": {
@@ -11972,6 +12000,10 @@
           "status": "ok",
           "summary": "1.26.0"
         },
+        "upstream_sync": {
+          "status": "na",
+          "summary": ""
+        },
         "dep_sync": {
           "status": "fail",
           "summary": "0/1"
@@ -11979,30 +12011,6 @@
         "konflux": {
           "status": "ok",
           "summary": "rhel_9_golang_1.25"
-        },
-        "art_config": {
-          "status": "na",
-          "summary": ""
-        },
-        "productized": {
-          "status": "na",
-          "summary": ""
-        },
-        "ci_config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
-        },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "32m ago"
         }
       },
       "dep_syncs": [
@@ -12011,17 +12019,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "2091b09b93bb",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "e2249c26d5edda46ae1bfae77e4895126ab3a8c0",
-              "message": "Update docs and governance links from vmware-tanzu to velero-io"
-            },
-            {
-              "sha": "d69f6abe5cc31fbc5c0543db9ebce9f3e26a6c4d",
-              "message": "Add param to StartRestore to facilitates future expansion (#10057)"
-            },
             {
               "sha": "c676fdd03e5c2e3f7a38c1fc3e6169f3dd242720",
               "message": "Merge pull request #10000 from shubham-pampattiwar/fix/cleanup-stale-backup-metrics"
@@ -13013,6 +13013,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         }
@@ -13032,17 +13040,25 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "config": {
-          "status": "ok",
+        "productized": {
+          "status": "na",
           "summary": ""
         },
-        "rebasebot": {
+        "open_pr": {
+          "status": "ok",
+          "summary": "#81"
+        },
+        "config": {
           "status": "ok",
           "summary": ""
         },
         "go_version": {
           "status": "ok",
           "summary": "1.25.0 (tc 1.25.8)"
+        },
+        "ci_config": {
+          "status": "ok",
+          "summary": ""
         },
         "upstream_sync": {
           "status": "na",
@@ -13056,25 +13072,17 @@
           "status": "na",
           "summary": ""
         },
-        "productized": {
-          "status": "na",
-          "summary": ""
-        },
-        "open_pr": {
-          "status": "ok",
-          "summary": "#81"
-        },
-        "ci_config": {
-          "status": "ok",
-          "summary": ""
-        },
         "konflux": {
           "status": "ok",
           "summary": "rhel_9_golang_1.25"
         },
+        "rebasebot": {
+          "status": "ok",
+          "summary": ""
+        },
         "upstream_image": {
           "status": "ok",
-          "summary": "32m ago"
+          "summary": "23m ago"
         },
         "art_config": {
           "status": "na",
@@ -14247,17 +14255,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "584cf1148a74",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "b6749d882ca0a1494078ffee5a36685e53b47869",
-              "message": "Merge pull request #10059 from shubham-pampattiwar/docs/migrate-links-to-velero-io"
-            },
-            {
-              "sha": "e5654fa7eda520408896a2f1b09c806ab8c07012",
-              "message": "Fix flaky TestKopiaObjectWriterEx_ConcurrentAsyncErrors (#10030)"
-            },
             {
               "sha": "5ecf38b5d7fdcd081aa7b64f4777eab74e350de1",
               "message": "Derive dev-tool CLI versions from go.mod (ginkgo, protoc-gen-go, goimports) (#10024)"
@@ -15249,6 +15249,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         },
@@ -16294,21 +16302,13 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "upstream_image": {
-          "status": "ok",
-          "summary": "32m ago"
-        },
-        "art_config": {
-          "status": "na",
-          "summary": ""
-        },
-        "productized": {
-          "status": "na",
-          "summary": ""
-        },
         "open_pr": {
           "status": "ok",
           "summary": "#234"
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
         },
         "rebasebot": {
           "status": "ok",
@@ -16318,29 +16318,37 @@
           "status": "ok",
           "summary": "1.26.0"
         },
-        "gomod_drift": {
-          "status": "na",
+        "ci_config": {
+          "status": "ok",
           "summary": ""
+        },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/4"
         },
         "konflux": {
           "status": "ok",
           "summary": "rhel_9_golang_1.25"
         },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "ci_config": {
-          "status": "ok",
+        "productized": {
+          "status": "na",
           "summary": ""
         },
         "upstream_sync": {
           "status": "na",
           "summary": ""
         },
-        "dep_sync": {
-          "status": "fail",
-          "summary": "0/4"
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "23m ago"
+        },
+        "art_config": {
+          "status": "na",
+          "summary": ""
         }
       },
       "dep_syncs": [
@@ -17169,17 +17177,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "2091b09b93bb",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "e2249c26d5edda46ae1bfae77e4895126ab3a8c0",
-              "message": "Update docs and governance links from vmware-tanzu to velero-io"
-            },
-            {
-              "sha": "d69f6abe5cc31fbc5c0543db9ebce9f3e26a6c4d",
-              "message": "Add param to StartRestore to facilitates future expansion (#10057)"
-            },
             {
               "sha": "c676fdd03e5c2e3f7a38c1fc3e6169f3dd242720",
               "message": "Merge pull request #10000 from shubham-pampattiwar/fix/cleanup-stale-backup-metrics"
@@ -18171,6 +18171,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         },
@@ -18984,42 +18992,6 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
-        },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "art_config": {
-          "status": "na",
-          "summary": ""
-        },
-        "productized": {
-          "status": "na",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
-        "dep_sync": {
-          "status": "fail",
-          "summary": "0/2"
-        },
-        "konflux": {
-          "status": "na",
-          "summary": ""
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "32m ago"
-        },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
         "config": {
           "status": "ok",
           "summary": ""
@@ -19030,6 +19002,42 @@
         },
         "ci_config": {
           "status": "ok",
+          "summary": ""
+        },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/2"
+        },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
+        "art_config": {
+          "status": "na",
+          "summary": ""
+        },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
+        },
+        "upstream_sync": {
+          "status": "na",
+          "summary": ""
+        },
+        "konflux": {
+          "status": "na",
+          "summary": ""
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "23m ago"
+        },
+        "productized": {
+          "status": "na",
           "summary": ""
         }
       },
@@ -19073,17 +19081,9 @@
           "org": "openshift",
           "repo": "velero",
           "have": "2091b09b93bb",
-          "head": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
+          "head": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
           "in_sync": false,
           "commits": [
-            {
-              "sha": "e2249c26d5edda46ae1bfae77e4895126ab3a8c0",
-              "message": "Update docs and governance links from vmware-tanzu to velero-io"
-            },
-            {
-              "sha": "d69f6abe5cc31fbc5c0543db9ebce9f3e26a6c4d",
-              "message": "Add param to StartRestore to facilitates future expansion (#10057)"
-            },
             {
               "sha": "c676fdd03e5c2e3f7a38c1fc3e6169f3dd242720",
               "message": "Merge pull request #10000 from shubham-pampattiwar/fix/cleanup-stale-backup-metrics"
@@ -20075,6 +20075,14 @@
             {
               "sha": "1285d17de46c807e3cd7fe430cf02855a7d39c75",
               "message": "Merge pull request #583 from redhat-chai-bot/remove-bz-merge-workflow"
+            },
+            {
+              "sha": "ead1fd81e9122123a031f54f6668b0f0938d0272",
+              "message": "Add AGENTS.md and AI tool configurations for agentic development readiness"
+            },
+            {
+              "sha": "f60a1ecba7e5d9b4c77692f33495975416bdb6e0",
+              "message": "Merge pull request #588 from redhat-chai-bot/ai-readiness/add-agents-md"
             }
           ]
         }
