@@ -7,29 +7,21 @@
       "skip": false,
       "upstream": "project-velero/kopia @ v0.22.3-velero-patch",
       "checks": {
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
         "rebasebot": {
           "status": "ok",
           "summary": ""
         },
-        "ci_config": {
-          "status": "na",
-          "summary": ""
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
         },
         "upstream_sync": {
           "status": "ok",
           "summary": ""
         },
-        "konflux": {
+        "dep_sync": {
           "status": "ok",
-          "summary": "rhel_9_golang_1.25"
+          "summary": ""
         },
         "upstream_image": {
           "status": "na",
@@ -39,20 +31,28 @@
           "status": "na",
           "summary": ""
         },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
+        "open_pr": {
+          "status": "na",
+          "summary": ""
         },
-        "dep_sync": {
-          "status": "ok",
+        "ci_config": {
+          "status": "na",
           "summary": ""
         },
         "gomod_drift": {
           "status": "ok",
           "summary": ""
         },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
+        },
         "art_config": {
           "status": "na",
+          "summary": ""
+        },
+        "config": {
+          "status": "ok",
           "summary": ""
         }
       },
@@ -78,31 +78,7 @@
       "skip": true,
       "upstream": "",
       "checks": {
-        "config": {
-          "status": "skip",
-          "summary": ""
-        },
-        "rebasebot": {
-          "status": "skip",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "skip",
-          "summary": ""
-        },
         "ci_config": {
-          "status": "skip",
-          "summary": ""
-        },
-        "gomod_drift": {
-          "status": "skip",
-          "summary": ""
-        },
-        "art_config": {
-          "status": "skip",
-          "summary": ""
-        },
-        "open_pr": {
           "status": "skip",
           "summary": ""
         },
@@ -110,7 +86,7 @@
           "status": "skip",
           "summary": ""
         },
-        "dep_sync": {
+        "gomod_drift": {
           "status": "skip",
           "summary": ""
         },
@@ -123,6 +99,30 @@
           "summary": ""
         },
         "productized": {
+          "status": "skip",
+          "summary": ""
+        },
+        "open_pr": {
+          "status": "skip",
+          "summary": ""
+        },
+        "config": {
+          "status": "skip",
+          "summary": ""
+        },
+        "rebasebot": {
+          "status": "skip",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "skip",
+          "summary": ""
+        },
+        "dep_sync": {
+          "status": "skip",
+          "summary": ""
+        },
+        "art_config": {
           "status": "skip",
           "summary": ""
         }
@@ -149,14 +149,6 @@
       "skip": false,
       "upstream": "filebrowser/filebrowser @ v2.63.23",
       "checks": {
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
         "upstream_sync": {
           "status": "ok",
           "summary": ""
@@ -169,19 +161,11 @@
           "status": "ok",
           "summary": ""
         },
-        "art_config": {
-          "status": "ok",
-          "summary": "konflux.Dockerfile"
-        },
         "config": {
           "status": "ok",
           "summary": ""
         },
         "rebasebot": {
-          "status": "ok",
-          "summary": ""
-        },
-        "ci_config": {
           "status": "ok",
           "summary": ""
         },
@@ -191,11 +175,27 @@
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "24m ago"
+          "summary": "1h ago"
+        },
+        "art_config": {
+          "status": "ok",
+          "summary": "konflux.Dockerfile"
         },
         "productized": {
           "status": "ok",
           "summary": "1/1"
+        },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
+        },
+        "ci_config": {
+          "status": "ok",
+          "summary": ""
         }
       },
       "cves": null
@@ -207,11 +207,27 @@
       "skip": false,
       "upstream": "migtools/kopia @ oadp-1.6",
       "checks": {
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
         "config": {
           "status": "ok",
           "summary": ""
         },
+        "rebasebot": {
+          "status": "ok",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
+        },
         "ci_config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "upstream_sync": {
           "status": "ok",
           "summary": ""
         },
@@ -223,6 +239,14 @@
           "status": "ok",
           "summary": "rhel_9_golang_1.25"
         },
+        "dep_sync": {
+          "status": "ok",
+          "summary": ""
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "1h ago"
+        },
         "art_config": {
           "status": "ok",
           "summary": "konflux.Dockerfile"
@@ -230,30 +254,6 @@
         "productized": {
           "status": "ok",
           "summary": "1/1"
-        },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
-        "rebasebot": {
-          "status": "ok",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
-        "upstream_sync": {
-          "status": "ok",
-          "summary": ""
-        },
-        "dep_sync": {
-          "status": "ok",
-          "summary": ""
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "24m ago"
         }
       },
       "cves": {
@@ -278,13 +278,13 @@
       "skip": false,
       "upstream": "velero-io/velero @ v1.18.4",
       "checks": {
-        "productized": {
+        "gomod_drift": {
           "status": "ok",
-          "summary": "1/1"
-        },
-        "open_pr": {
-          "status": "na",
           "summary": ""
+        },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
         },
         "rebasebot": {
           "status": "ok",
@@ -294,37 +294,37 @@
           "status": "ok",
           "summary": "1.26.0"
         },
-        "ci_config": {
+        "upstream_sync": {
           "status": "ok",
           "summary": ""
         },
-        "upstream_sync": {
+        "upstream_image": {
           "status": "ok",
+          "summary": "1h ago"
+        },
+        "art_config": {
+          "status": "ok",
+          "summary": "konflux.Dockerfile"
+        },
+        "productized": {
+          "status": "ok",
+          "summary": "1/1"
+        },
+        "open_pr": {
+          "status": "na",
           "summary": ""
         },
         "config": {
           "status": "ok",
           "summary": ""
         },
-        "dep_sync": {
-          "status": "ok",
-          "summary": "2/2"
-        },
-        "gomod_drift": {
+        "ci_config": {
           "status": "ok",
           "summary": ""
         },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "23m ago"
-        },
-        "art_config": {
-          "status": "ok",
-          "summary": "konflux.Dockerfile"
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/2"
         }
       },
       "dep_syncs": [
@@ -333,16 +333,42 @@
           "org": "migtools",
           "repo": "kopia",
           "have": "47fc4a34751a",
-          "head": "47fc4a34751afa89d0fa4fcb8282288335ff2f7f",
-          "in_sync": true
+          "head": "f83e62070a5dc7db7b75aa0f571f29bf369012dc",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "c698479f7fdaedcd0f884769bf1193e83bf1591d",
+              "message": "ci: disable quay binaries push workflow"
+            },
+            {
+              "sha": "f83e62070a5dc7db7b75aa0f571f29bf369012dc",
+              "message": "Merge pull request #62 from migtools/ci/disable-quay-push-1.6"
+            }
+          ]
         },
         {
           "module": "https://github.com/openshift/restic",
           "org": "openshift",
           "repo": "restic",
           "have": "616512f2dee8",
-          "head": "616512f2dee8ec76a1e08bbd016fb1e893aaf834",
-          "in_sync": true
+          "head": "e808d4d5a3b2033a4163cf7b9b97717fc61c0c2a",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "31e761b3436d1627e607df3d46dace9e9bd15382",
+              "message": "ci: disable upstream tests workflow"
+            },
+            {
+              "sha": "e808d4d5a3b2033a4163cf7b9b97717fc61c0c2a",
+              "message": "Merge pull request #76 from kaovilai/ci/disable-tests-workflow-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "2 internal dep(s) out of sync"
         }
       ],
       "cves": {
@@ -367,10 +393,6 @@
       "skip": false,
       "upstream": "kubevirt/kubevirt-velero-plugin @ v0.9.1",
       "checks": {
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
         "rebasebot": {
           "status": "ok",
           "summary": ""
@@ -383,26 +405,6 @@
           "status": "ok",
           "summary": ""
         },
-        "dep_sync": {
-          "status": "ok",
-          "summary": "1/1"
-        },
-        "gomod_drift": {
-          "status": "ok",
-          "summary": ""
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "24m ago"
-        },
-        "art_config": {
-          "status": "ok",
-          "summary": "konflux.Dockerfile"
-        },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
         "upstream_sync": {
           "status": "ok",
           "summary": ""
@@ -411,9 +413,33 @@
           "status": "ok",
           "summary": "rhel_9_golang_1.25"
         },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/1"
+        },
+        "gomod_drift": {
+          "status": "ok",
+          "summary": ""
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "1h ago"
+        },
+        "art_config": {
+          "status": "ok",
+          "summary": "konflux.Dockerfile"
+        },
         "productized": {
           "status": "ok",
           "summary": "1/1"
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
         }
       },
       "dep_syncs": [
@@ -422,8 +448,24 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "1 internal dep(s) out of sync"
         }
       ],
       "cves": null
@@ -435,33 +477,9 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "24m ago"
-        },
         "productized": {
           "status": "ok",
           "summary": "1/1"
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
-        "dep_sync": {
-          "status": "ok",
-          "summary": "1/1"
-        },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "art_config": {
-          "status": "ok",
-          "summary": "konflux.Dockerfile"
         },
         "open_pr": {
           "status": "na",
@@ -471,17 +489,41 @@
           "status": "ok",
           "summary": ""
         },
-        "rebasebot": {
-          "status": "ok",
-          "summary": ""
-        },
         "ci_config": {
           "status": "ok",
           "summary": ""
         },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
+        "art_config": {
+          "status": "ok",
+          "summary": "konflux.Dockerfile"
+        },
+        "rebasebot": {
+          "status": "ok",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
+        },
         "upstream_sync": {
           "status": "na",
           "summary": ""
+        },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/1"
+        },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "1h ago"
         }
       },
       "dep_syncs": [
@@ -490,8 +532,24 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "1 internal dep(s) out of sync"
         }
       ],
       "cves": null
@@ -507,6 +565,22 @@
           "status": "ok",
           "summary": "1/1"
         },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "1h ago"
+        },
         "rebasebot": {
           "status": "ok",
           "summary": ""
@@ -519,37 +593,21 @@
           "status": "ok",
           "summary": ""
         },
-        "dep_sync": {
-          "status": "ok",
-          "summary": "2/2"
-        },
-        "gomod_drift": {
+        "upstream_sync": {
           "status": "na",
           "summary": ""
+        },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/2"
         },
         "konflux": {
           "status": "ok",
           "summary": "rhel_9_golang_1.25"
         },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "23m ago"
-        },
         "art_config": {
           "status": "ok",
           "summary": "konflux.Dockerfile"
-        },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
         }
       },
       "dep_syncs": [
@@ -558,16 +616,42 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
         },
         {
           "module": "github.com/migtools/kopia",
           "org": "migtools",
           "repo": "kopia",
           "have": "47fc4a34751a",
-          "head": "47fc4a34751afa89d0fa4fcb8282288335ff2f7f",
-          "in_sync": true
+          "head": "f83e62070a5dc7db7b75aa0f571f29bf369012dc",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "c698479f7fdaedcd0f884769bf1193e83bf1591d",
+              "message": "ci: disable quay binaries push workflow"
+            },
+            {
+              "sha": "f83e62070a5dc7db7b75aa0f571f29bf369012dc",
+              "message": "Merge pull request #62 from migtools/ci/disable-quay-push-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "2 internal dep(s) out of sync"
         }
       ],
       "cves": {
@@ -592,15 +676,31 @@
       "skip": false,
       "upstream": "velero-io/velero-plugin-for-aws @ v1.14.4",
       "checks": {
+        "rebasebot": {
+          "status": "ok",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
+        },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "1h ago"
+        },
+        "productized": {
+          "status": "ok",
+          "summary": "1/1"
+        },
         "open_pr": {
           "status": "na",
           "summary": ""
         },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "rebasebot": {
+        "ci_config": {
           "status": "ok",
           "summary": ""
         },
@@ -609,8 +709,8 @@
           "summary": ""
         },
         "dep_sync": {
-          "status": "ok",
-          "summary": "1/1"
+          "status": "fail",
+          "summary": "0/1"
         },
         "gomod_drift": {
           "status": "ok",
@@ -620,25 +720,9 @@
           "status": "ok",
           "summary": "konflux.Dockerfile"
         },
-        "productized": {
-          "status": "ok",
-          "summary": "1/1"
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
-        "ci_config": {
+        "config": {
           "status": "ok",
           "summary": ""
-        },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "23m ago"
         }
       },
       "dep_syncs": [
@@ -647,8 +731,24 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "1 internal dep(s) out of sync"
         }
       ],
       "cves": null
@@ -660,9 +760,9 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "art_config": {
-          "status": "ok",
-          "summary": "konflux.Dockerfile"
+        "open_pr": {
+          "status": "na",
+          "summary": ""
         },
         "config": {
           "status": "ok",
@@ -680,33 +780,33 @@
           "status": "ok",
           "summary": ""
         },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "productized": {
+        "konflux": {
           "status": "ok",
-          "summary": "1/1"
+          "summary": "rhel_9_golang_1.25"
         },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
+        "art_config": {
+          "status": "ok",
+          "summary": "konflux.Dockerfile"
         },
         "upstream_sync": {
           "status": "na",
           "summary": ""
         },
         "dep_sync": {
-          "status": "ok",
-          "summary": "1/1"
+          "status": "fail",
+          "summary": "0/1"
         },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "23m ago"
+          "summary": "1h ago"
+        },
+        "productized": {
+          "status": "ok",
+          "summary": "1/1"
         }
       },
       "dep_syncs": [
@@ -715,8 +815,24 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "1 internal dep(s) out of sync"
         }
       ],
       "cves": null
@@ -728,21 +844,37 @@
       "skip": false,
       "upstream": "velero-io/velero-plugin-for-microsoft-azure @ v1.14.4",
       "checks": {
+        "upstream_sync": {
+          "status": "ok",
+          "summary": ""
+        },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "1h ago"
+        },
+        "art_config": {
+          "status": "ok",
+          "summary": "konflux.Dockerfile"
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
+        },
         "go_version": {
           "status": "ok",
           "summary": "1.26.0"
         },
         "dep_sync": {
-          "status": "ok",
-          "summary": "1/1"
+          "status": "fail",
+          "summary": "0/1"
         },
-        "upstream_image": {
+        "gomod_drift": {
           "status": "ok",
-          "summary": "24m ago"
-        },
-        "art_config": {
-          "status": "ok",
-          "summary": "konflux.Dockerfile"
+          "summary": ""
         },
         "productized": {
           "status": "ok",
@@ -752,10 +884,6 @@
           "status": "na",
           "summary": ""
         },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
         "rebasebot": {
           "status": "ok",
           "summary": ""
@@ -763,18 +891,6 @@
         "ci_config": {
           "status": "ok",
           "summary": ""
-        },
-        "upstream_sync": {
-          "status": "ok",
-          "summary": ""
-        },
-        "gomod_drift": {
-          "status": "ok",
-          "summary": ""
-        },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.25"
         }
       },
       "dep_syncs": [
@@ -783,8 +899,24 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "1 internal dep(s) out of sync"
         }
       ],
       "cves": null
@@ -796,19 +928,7 @@
       "skip": false,
       "upstream": "velero-io/velero-plugin-for-gcp @ v1.14.4",
       "checks": {
-        "productized": {
-          "status": "ok",
-          "summary": "1/1"
-        },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
         "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "rebasebot": {
           "status": "ok",
           "summary": ""
         },
@@ -824,14 +944,6 @@
           "status": "ok",
           "summary": ""
         },
-        "dep_sync": {
-          "status": "ok",
-          "summary": "1/1"
-        },
-        "art_config": {
-          "status": "ok",
-          "summary": "konflux.Dockerfile"
-        },
         "gomod_drift": {
           "status": "ok",
           "summary": ""
@@ -842,7 +954,27 @@
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "23m ago"
+          "summary": "1h ago"
+        },
+        "productized": {
+          "status": "ok",
+          "summary": "1/1"
+        },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "rebasebot": {
+          "status": "ok",
+          "summary": ""
+        },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/1"
+        },
+        "art_config": {
+          "status": "ok",
+          "summary": "konflux.Dockerfile"
         }
       },
       "dep_syncs": [
@@ -851,8 +983,24 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "1 internal dep(s) out of sync"
         }
       ],
       "cves": null
@@ -868,10 +1016,6 @@
           "status": "na",
           "summary": ""
         },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
         "rebasebot": {
           "status": "ok",
           "summary": ""
@@ -880,8 +1024,8 @@
           "status": "ok",
           "summary": "1.26.0"
         },
-        "ci_config": {
-          "status": "ok",
+        "gomod_drift": {
+          "status": "na",
           "summary": ""
         },
         "konflux": {
@@ -890,27 +1034,31 @@
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "24m ago"
+          "summary": "1h ago"
         },
         "art_config": {
           "status": "ok",
           "summary": "konflux.Dockerfile"
+        },
+        "productized": {
+          "status": "ok",
+          "summary": "1/1"
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "ci_config": {
+          "status": "ok",
+          "summary": ""
         },
         "upstream_sync": {
           "status": "na",
           "summary": ""
         },
         "dep_sync": {
-          "status": "ok",
-          "summary": "2/2"
-        },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "productized": {
-          "status": "ok",
-          "summary": "1/1"
+          "status": "fail",
+          "summary": "1/2"
         }
       },
       "dep_syncs": [
@@ -927,8 +1075,24 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "1 internal dep(s) out of sync"
         }
       ],
       "cves": null
@@ -940,40 +1104,8 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "rebasebot": {
-          "status": "ok",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
         "upstream_sync": {
           "status": "na",
-          "summary": ""
-        },
-        "dep_sync": {
-          "status": "ok",
-          "summary": "2/2"
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "24m ago"
-        },
-        "art_config": {
-          "status": "ok",
-          "summary": "konflux.Dockerfile"
-        },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
-        "ci_config": {
-          "status": "ok",
           "summary": ""
         },
         "gomod_drift": {
@@ -987,6 +1119,38 @@
         "productized": {
           "status": "ok",
           "summary": "1/1"
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "rebasebot": {
+          "status": "ok",
+          "summary": ""
+        },
+        "ci_config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "1/2"
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "1h ago"
+        },
+        "art_config": {
+          "status": "ok",
+          "summary": "konflux.Dockerfile"
+        },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
         }
       },
       "dep_syncs": [
@@ -1003,8 +1167,24 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "1 internal dep(s) out of sync"
         }
       ],
       "cves": {
@@ -1043,13 +1223,29 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "konflux": {
+        "config": {
           "status": "ok",
-          "summary": "rhel_9_golang_1.25"
+          "summary": ""
+        },
+        "rebasebot": {
+          "status": "ok",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
+        },
+        "ci_config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "upstream_sync": {
+          "status": "na",
+          "summary": ""
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "24m ago"
+          "summary": "1h ago"
         },
         "productized": {
           "status": "ok",
@@ -1059,37 +1255,21 @@
           "status": "na",
           "summary": ""
         },
-        "rebasebot": {
-          "status": "ok",
-          "summary": ""
-        },
-        "ci_config": {
-          "status": "ok",
-          "summary": ""
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/1"
         },
         "gomod_drift": {
           "status": "na",
           "summary": ""
         },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.25"
+        },
         "art_config": {
           "status": "ok",
           "summary": "konflux.Dockerfile"
-        },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
-        },
-        "dep_sync": {
-          "status": "ok",
-          "summary": "1/1"
         }
       },
       "dep_syncs": [
@@ -1098,8 +1278,24 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "1 internal dep(s) out of sync"
         }
       ],
       "cves": null
@@ -1111,7 +1307,43 @@
       "skip": false,
       "upstream": "",
       "checks": {
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.26"
+        },
+        "upstream_image": {
+          "status": "ok",
+          "summary": "1h ago"
+        },
+        "art_config": {
+          "status": "ok",
+          "summary": "3 cfgs"
+        },
+        "productized": {
+          "status": "ok",
+          "summary": "3/3"
+        },
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "go_version": {
+          "status": "ok",
+          "summary": "1.26.0"
+        },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "0/1"
+        },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
         "config": {
+          "status": "ok",
+          "summary": ""
+        },
+        "rebasebot": {
           "status": "ok",
           "summary": ""
         },
@@ -1119,45 +1351,9 @@
           "status": "ok",
           "summary": ""
         },
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.26"
-        },
-        "upstream_image": {
-          "status": "ok",
-          "summary": "24m ago"
-        },
-        "art_config": {
-          "status": "ok",
-          "summary": "3 cfgs"
-        },
-        "open_pr": {
-          "status": "na",
-          "summary": ""
-        },
-        "rebasebot": {
-          "status": "ok",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
-        },
         "upstream_sync": {
           "status": "na",
           "summary": ""
-        },
-        "dep_sync": {
-          "status": "ok",
-          "summary": "1/1"
-        },
-        "productized": {
-          "status": "ok",
-          "summary": "3/3"
         }
       },
       "dep_syncs": [
@@ -1166,8 +1362,24 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "1 internal dep(s) out of sync"
         }
       ],
       "cves": null
@@ -1179,23 +1391,43 @@
       "skip": false,
       "upstream": "",
       "checks": {
+        "config": {
+          "status": "ok",
+          "summary": ""
+        },
         "go_version": {
           "status": "ok",
           "summary": "1.26.0"
+        },
+        "upstream_sync": {
+          "status": "na",
+          "summary": ""
+        },
+        "dep_sync": {
+          "status": "fail",
+          "summary": "2/6"
         },
         "gomod_drift": {
           "status": "na",
           "summary": ""
         },
+        "konflux": {
+          "status": "ok",
+          "summary": "rhel_9_golang_1.26"
+        },
         "upstream_image": {
           "status": "ok",
-          "summary": "24m ago"
+          "summary": "1h ago"
+        },
+        "art_config": {
+          "status": "ok",
+          "summary": "konflux.Dockerfile"
         },
         "open_pr": {
           "status": "na",
           "summary": ""
         },
-        "config": {
+        "rebasebot": {
           "status": "ok",
           "summary": ""
         },
@@ -1203,29 +1435,9 @@
           "status": "ok",
           "summary": ""
         },
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
-        },
-        "dep_sync": {
-          "status": "ok",
-          "summary": "6/6"
-        },
-        "konflux": {
-          "status": "ok",
-          "summary": "rhel_9_golang_1.26"
-        },
-        "art_config": {
-          "status": "ok",
-          "summary": "konflux.Dockerfile"
-        },
         "productized": {
           "status": "ok",
           "summary": "1/1"
-        },
-        "rebasebot": {
-          "status": "ok",
-          "summary": ""
         }
       },
       "dep_syncs": [
@@ -1250,32 +1462,78 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
         },
         {
           "module": "https://github.com/openshift/velero",
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
         },
         {
           "module": "https://github.com/openshift/restic.git",
           "org": "openshift",
           "repo": "restic",
           "have": "616512f2dee8",
-          "head": "616512f2dee8ec76a1e08bbd016fb1e893aaf834",
-          "in_sync": true
+          "head": "e808d4d5a3b2033a4163cf7b9b97717fc61c0c2a",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "31e761b3436d1627e607df3d46dace9e9bd15382",
+              "message": "ci: disable upstream tests workflow"
+            },
+            {
+              "sha": "e808d4d5a3b2033a4163cf7b9b97717fc61c0c2a",
+              "message": "Merge pull request #76 from kaovilai/ci/disable-tests-workflow-oadp-1.6"
+            }
+          ]
         },
         {
           "module": "https://github.com/migtools/kopia",
           "org": "migtools",
           "repo": "kopia",
           "have": "47fc4a34751a",
-          "head": "47fc4a34751afa89d0fa4fcb8282288335ff2f7f",
-          "in_sync": true
+          "head": "f83e62070a5dc7db7b75aa0f571f29bf369012dc",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "c698479f7fdaedcd0f884769bf1193e83bf1591d",
+              "message": "ci: disable quay binaries push workflow"
+            },
+            {
+              "sha": "f83e62070a5dc7db7b75aa0f571f29bf369012dc",
+              "message": "Merge pull request #62 from migtools/ci/disable-quay-push-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "4 internal dep(s) out of sync"
         }
       ],
       "cves": null
@@ -1287,29 +1545,29 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "open_pr": {
+        "upstream_sync": {
           "status": "na",
           "summary": ""
         },
-        "config": {
-          "status": "ok",
-          "summary": ""
-        },
-        "go_version": {
-          "status": "ok",
-          "summary": "1.26.0"
+        "dep_sync": {
+          "status": "fail",
+          "summary": "2/4"
         },
         "gomod_drift": {
           "status": "na",
           "summary": ""
         },
-        "konflux": {
+        "art_config": {
           "status": "ok",
-          "summary": "rhel_9_golang_1.26"
+          "summary": "konflux.Dockerfile"
         },
         "productized": {
           "status": "ok",
           "summary": "1/1"
+        },
+        "config": {
+          "status": "ok",
+          "summary": ""
         },
         "rebasebot": {
           "status": "ok",
@@ -1319,21 +1577,21 @@
           "status": "ok",
           "summary": ""
         },
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
-        },
-        "dep_sync": {
+        "konflux": {
           "status": "ok",
-          "summary": "4/4"
+          "summary": "rhel_9_golang_1.26"
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "24m ago"
+          "summary": "1h ago"
         },
-        "art_config": {
+        "open_pr": {
+          "status": "na",
+          "summary": ""
+        },
+        "go_version": {
           "status": "ok",
-          "summary": "konflux.Dockerfile"
+          "summary": "1.26.0"
         }
       },
       "dep_syncs": [
@@ -1358,16 +1616,42 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
         },
         {
           "module": "github.com/migtools/kopia",
           "org": "migtools",
           "repo": "kopia",
           "have": "47fc4a34751a",
-          "head": "47fc4a34751afa89d0fa4fcb8282288335ff2f7f",
-          "in_sync": true
+          "head": "f83e62070a5dc7db7b75aa0f571f29bf369012dc",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "c698479f7fdaedcd0f884769bf1193e83bf1591d",
+              "message": "ci: disable quay binaries push workflow"
+            },
+            {
+              "sha": "f83e62070a5dc7db7b75aa0f571f29bf369012dc",
+              "message": "Merge pull request #62 from migtools/ci/disable-quay-push-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "2 internal dep(s) out of sync"
         }
       ],
       "cves": null
@@ -1379,13 +1663,13 @@
       "skip": false,
       "upstream": "",
       "checks": {
-        "gomod_drift": {
-          "status": "na",
-          "summary": ""
-        },
-        "konflux": {
+        "art_config": {
           "status": "ok",
-          "summary": "rhel_9_golang_1.26"
+          "summary": "konflux.Dockerfile"
+        },
+        "productized": {
+          "status": "ok",
+          "summary": "1/1"
         },
         "open_pr": {
           "status": "na",
@@ -1399,21 +1683,25 @@
           "status": "ok",
           "summary": ""
         },
+        "upstream_sync": {
+          "status": "na",
+          "summary": ""
+        },
         "dep_sync": {
+          "status": "fail",
+          "summary": "1/2"
+        },
+        "gomod_drift": {
+          "status": "na",
+          "summary": ""
+        },
+        "konflux": {
           "status": "ok",
-          "summary": "2/2"
+          "summary": "rhel_9_golang_1.26"
         },
         "upstream_image": {
           "status": "ok",
-          "summary": "24m ago"
-        },
-        "art_config": {
-          "status": "ok",
-          "summary": "konflux.Dockerfile"
-        },
-        "productized": {
-          "status": "ok",
-          "summary": "1/1"
+          "summary": "1h ago"
         },
         "config": {
           "status": "ok",
@@ -1422,10 +1710,6 @@
         "go_version": {
           "status": "ok",
           "summary": "1.26.0"
-        },
-        "upstream_sync": {
-          "status": "na",
-          "summary": ""
         }
       },
       "dep_syncs": [
@@ -1442,8 +1726,24 @@
           "org": "openshift",
           "repo": "velero",
           "have": "c15f70524d0e",
-          "head": "c15f70524d0e2aefa4dac2dd4e82be162879aec4",
-          "in_sync": true
+          "head": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+          "in_sync": false,
+          "commits": [
+            {
+              "sha": "0bb356af76ef89d10248a7bff0528792728e97eb",
+              "message": "Add akarol to OWNERS"
+            },
+            {
+              "sha": "063f21d581fe71ed5cfdb769f5684d41a1fd4298",
+              "message": "Merge pull request #597 from redhat-chai-bot/add-akarol-owners-oadp-1.6"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "error",
+          "message": "1 internal dep(s) out of sync"
         }
       ],
       "cves": null
